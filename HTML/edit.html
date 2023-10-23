@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+    <script defer type="module" src="edit.js"></script>
+</head>
+<body>
+    <h1>Edit Task</h1>
+    <form id="edit-task-form">
+        
+        <label for="new-name">Name:</label>
+        <input type="text" id="name">
+        <br>
+        <label for="new-description">Description:</label>
+        <br>
+        <textarea id="new-description" cols="30" rows="3" placeholder="Description"></textarea>
+        <br>
+        <label for="new-status">Is Completed:</label>
+        <input type="checkbox" id="status">
+        <br>
+        <button id="Submit" type="submit">Submit</button>
+    </form>
+    <button id="go-home-btn">Go Home</button>
+</body>
+</html>

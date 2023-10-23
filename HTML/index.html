@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script defer type="module" src="index.js"></script> 
+</head>
+<body>
+    <header>
+        <h1>To Do List</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Add New Task</h2>
+            <form id="add-task-form">
+                <input type="text" id="task-name" placeholder="Task name">
+                <br>
+                <textarea id="task-description" cols="30" rows="3" placeholder="Description"></textarea>
+                <br>
+                <input type="submit" id="task-submit" value="Add">
+            </form>
+        </section>
+        <section class="filter-sort-section ">
+            <h2>Filter and Sort</h2>
+            <div>
+                <label for="filter">Filter:</label>
+                <select id="filter">
+                    <option value="all">All</option>
+                    <option value="completed">Completed</option>
+                    <option value="not-completed">Not Completed</option>
+                </select>
+            </div>
+            <div>
+                <label for="sort">Sort:</label>
+                <select id="sort">  
+                    <option value="name">Name</option>
+                    <option value="date">Date</option>
+                </select>
+            </div>
+        </section>
+        <section class="tasks-section">
+            <h2>Tasks</h2>
+            <div id="tasks-list"></div>
+        </section>
+    </main>
+</body>
+</html>
