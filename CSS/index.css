@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+}
+
+h3,
+p,
+h2,
+label,
+h1,
+span{
+    color: white;
+}
+
+.task-element {
+    border: 1px white solid;
+}
