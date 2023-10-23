@@ -5,9 +5,15 @@ class TasksList {
 
     constructor(){
 
+       
         const objects = JSON.parse(localStorage.getItem("tasks"));
         
+        if(objects === null){
+            return
+        }
+        
         this.setTasks = objects.map(obj => Task.getObjectToTask(obj));
+        
     } 
 
     set setTasks(tasks){

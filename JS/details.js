@@ -18,21 +18,21 @@ myDetails.appendChild(title);
 const nameHeader = document.createElement("h2");
 nameHeader.textContent = "Name:";
 const name = document.createElement("p");
-name.textContent = myTask.getName();
+name.textContent = myTask.getName;
 
 const idHeader = document.createElement("h3");
 idHeader.textContent = "Id:";
 const id = document.createElement("p");
-id.textContent = myTask.getId();
+id.textContent = myTask.getId;
 
 const desc = document.createElement("p");
-desc.textContent = `Desc: ${myTask.getDescription()}`;
+desc.textContent = `Desc: ${myTask.getDescription}`;
 
 const status = document.createElement("p");
-status.textContent = `Status: ${myTask.getIsCompleted() ? "Completed" : "Not Completed"}`;
+status.textContent = `Status: ${myTask.getIsCompleted ? "Completed" : "Not Completed"}`;
 
 const creationDate = document.createElement("p");
-creationDate.textContent = `Creation Date: ${myTask.getCreationDate()}`;
+creationDate.textContent = `Creation Date: ${myTask.getCreationDate}`;
 
 myDetails.appendChild(nameHeader);
 myDetails.appendChild(name);
