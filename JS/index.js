@@ -1,4 +1,4 @@
-import Task from "./Models/task.js";
+import Task from "./task.js";
 import tasks from "./globals.js";
 
 const filter = document.getElementById("filter");
@@ -10,15 +10,15 @@ const taskDescription = document.getElementById("description");
 
 addTaskForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    let taskToAdd;
-        taskToAdd = new Task(taskName.value, taskDescription.value);
+    let taskToAdd = new Task(taskName.value, taskDescription.value);
 
-        taskName.value = " ";
-        taskDescription.value = " ";
+    taskName.value = " ";
+    taskDescription.value = " ";
 
+    console.log(tasks);
 
     tasks.addTask(taskToAdd);
-});
+}); 
 
 filter.addEventListener("change", () => { tasks.updateSortFilter(filter.value, sort.value) })
 sort.addEventListener("change", () => { tasks.updateSortFilter(filter.value, sort.value) })

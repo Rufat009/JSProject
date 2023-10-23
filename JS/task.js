@@ -6,7 +6,7 @@ class Task{
     #isCompleted;
 
     constructor(name, description){
-        this.#id = this.generateId();
+        this.#id =  generateId();
         this.#creationDate = new Date();
         this.#isCompleted = false;
         this.setName = name;

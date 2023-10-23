@@ -1,4 +1,4 @@
-import Task from "../Models/task.js";
+import Task from "./task.js";
 
 const Home = document.getElementById("Home");
 

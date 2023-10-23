@@ -1,5 +1,5 @@
-import Task from "../Models/task.js";
-import tasks from "../globals.js";
+import Task from "./task.js";
+import tasks from "./globals.js";
 
 const goHomeButton = document.getElementById("go-home-btn");
 

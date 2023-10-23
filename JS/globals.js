@@ -1,4 +1,4 @@
-import TasksList from "./Models/taskList.js";
+import TasksList from "./taskList.js";
 
 const tasks = new TasksList([]);
 
