@@ -3,7 +3,7 @@ import Task from "./task.js";
 const Home = document.getElementById("Home");
 
 Home.addEventListener("click", e => {
-    window.history.back();
+    window.location.href = '../HTML/index.html';
 })
 
 const myParams = new URLSearchParams(window.location.search);

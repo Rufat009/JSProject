@@ -1,17 +1,17 @@
 import Task from "./task.js";
 import tasks from "./globals.js";
 
-const goHomeButton = document.getElementById("go-home-btn");
+const goHomeButton = document.getElementById("Home");
 
 goHomeButton.addEventListener("click", e => {
-    window.location.href = '/index.html';
+    window.location.href = '../HTML/index.html';
 })
 
-const myTask = Task.getObjectToTask(myObjects.find(task => task.id === myParams.get('id')));
+const myParams = new URLSearchParams(window.location.search);
 const myObjects = JSON.parse(localStorage.getItem("tasks"));
+const myTask = Task.getObjectToTask(myObjects.find(task => task.id === myParams.get('id')));
 
 const Form = document.getElementById("form");
-const myParams = new URLSearchParams(window.location.search);
 const Name = document.getElementById('name');
 const Description = document.getElementById('description');
 const Status = document.getElementById('status');

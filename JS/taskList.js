@@ -109,11 +109,11 @@ class TasksList {
         });
 
         editButton.addEventListener("click", () => {
-            window.location.href = `/Edit/edit.html?id=${task.getId}`;
+            window.location.href = `../HTML/edit.html?id=${task.getId}`;
         });
 
         detailsButton.addEventListener("click", () => {
-            window.location.href = `/Details/details.html?id=${task.getId}`;
+            window.location.href = `../HTML/details.html?id=${task.getId}`;
         }); 
 
         isCompletedSelect.addEventListener("change", () => {
